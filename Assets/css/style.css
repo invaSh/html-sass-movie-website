@@ -40,6 +40,7 @@
 }
 .header .nav-bar {
   grid-column: 4/6;
+  margin-right: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -81,6 +82,7 @@
     grid-template-rows: 1fr 1fr;
     width: 100vw;
     height: 20vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,6 +104,7 @@
     grid-template-rows: 1fr 1fr;
     width: 100vw;
     height: 20vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +192,10 @@
 
 .card:hover {
   transform: scale(1.1);
+}
+
+.main-container {
+  overflow: hidden;
 }
 
 .center-section {

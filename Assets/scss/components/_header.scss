@@ -36,6 +36,7 @@
 
     .nav-bar{
         grid-column: 4/6;
+        margin-right: 0;
         @include flexbox(flex-end, center);
 
         .nav-container-ul{
@@ -66,11 +67,11 @@
 }
 
 @mixin s-m-resp{
-
     .header{
         grid-template-rows: 1fr 1fr;
         width: 100vw;
         height: 20vh;  
+        overflow: hidden;
         @include flexbox(center, center){
             flex-direction: column;
         }
