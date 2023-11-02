@@ -12,10 +12,11 @@
     }
 
     .main-card-container{
-        background-color: $color-4;
+        background-color: $color-3;
         color: $color-1;
         grid-column: 2/6;
         padding: 30px;
+        text-align: center;
         @include flexbox(none, center){
             flex-direction: column;
         }
@@ -29,9 +30,24 @@
     }
     
     .main-trailer-container{
-        background-color: $color-3;
+        background-color: $color-2;
         color: $color-1;
-        text-align: center;
         padding: 20px;
+        @include flexbox(none, center){
+            flex-direction: column;
+        }
     }
+}
+
+@mixin center-s-m{
+    .center-section{
+        display: block;
+    }
+}
+
+@include s{
+    @include center-s-m;
+}
+@include m{
+    @include center-s-m;
 }

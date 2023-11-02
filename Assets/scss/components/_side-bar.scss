@@ -17,3 +17,17 @@
         @include li-components-hover();
     }
 }
+
+@mixin s-m{
+    .side-bar{
+        @include flexbox(center, none);
+    }
+}
+
+@include s{
+    @include s-m;
+}
+
+@include m{
+    @include s-m;
+}

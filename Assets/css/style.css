@@ -122,9 +122,6 @@
   }
 }
 @media ((min-width: 670px) and (max-width: 992px)) {
-  .header {
-    height: 15vh;
-  }
   .header .logo-container {
     grid-column: 1/3;
     width: 100%;
@@ -173,6 +170,20 @@
   color: #12111f;
 }
 
+@media (max-width: 576px) {
+  .side-bar {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+  }
+}
+@media ((min-width: 576px) and (max-width: 670px)) {
+  .side-bar {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+  }
+}
 .card {
   width: 220px;
   position: relative;
@@ -206,10 +217,11 @@
   grid-column: 1/2;
 }
 .center-section .main-card-container {
-  background-color: rgba(26, 25, 36, 0.9843137255);
+  background-color: rgba(35, 34, 49, 0.9843137255);
   color: #f6bd07;
   grid-column: 2/6;
   padding: 30px;
+  text-align: center;
   display: flex;
   justify-content: none;
   align-items: center;
@@ -223,8 +235,25 @@
   padding: 10px;
 }
 .center-section .main-trailer-container {
-  background-color: rgba(35, 34, 49, 0.9843137255);
+  background-color: #12111f;
   color: #f6bd07;
-  text-align: center;
   padding: 20px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .center-section {
+    display: block;
+  }
+}
+@media ((min-width: 576px) and (max-width: 670px)) {
+  .center-section {
+    display: block;
+  }
+}
+body {
+  background-color: #12111f;
 }/*# sourceMappingURL=style.css.map */

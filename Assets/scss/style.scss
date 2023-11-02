@@ -8,12 +8,17 @@
 }
 
 
+
 @import '_vars';
 @import '_breakpoints';
 @import 'components/header';
 @import 'components/side-bar';
 @import 'components/_card';
 @import 'components/main-section';
+
+body{
+    background-color: $color-2;
+}
 
 
 
