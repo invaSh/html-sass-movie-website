@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #12111f;
+  color: #f6bd07;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 2em;
+  width: 100%;
+}
+.header .logo-container {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.header .logo-container .logo {
+  width: 300px;
+}
+.header .search-bar {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .search-bar #search {
+  border: 2.5px solid #625d5d;
+  background: none;
+  outline: none;
+  height: 30px;
+  width: 250px;
+  border-radius: 15px;
+}
+.header .nav-bar {
+  grid-column: 4/6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .nav-bar .nav-container-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav-bar .nav-container-ul .nav-components {
+  padding: 15px;
+  list-style-type: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 10px;
+}
+.header .nav-bar .nav-container-ul .nav-components:hover {
+  background-color: #f6bd07;
+  color: #12111f;
+}
+.header .nav-bar .sign-up {
+  margin-left: 20px;
+  padding: 15px;
+  list-style-type: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  border: #f6bd07 solid;
+  padding: 10px 15px;
+}
+.header .nav-bar .sign-up:hover {
+  background-color: #f6bd07;
+  color: #12111f;
+}
+
+@media (max-width: 576px) {
+  .header {
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .logo-container {
+    grid-row: 1/2;
+    grid-column: 1/6;
+  }
+  .header .search-bar {
+    display: none;
+  }
+  .header .nav-bar {
+    grid-row: 2/3;
+  }
+}
+@media ((min-width: 576px) and (max-width: 670px)) {
+  .header {
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .logo-container {
+    grid-row: 1/2;
+    grid-column: 1/6;
+  }
+  .header .search-bar {
+    display: none;
+  }
+  .header .nav-bar {
+    grid-row: 2/3;
+  }
+}
+@media ((min-width: 670px) and (max-width: 992px)) {
+  .header {
+    height: 15vh;
+  }
+  .header .logo-container {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .header #search {
+    display: none;
+  }
+  .header .nav-bar {
+    text-align: center;
+  }
+}
+@media ((min-width: 992px) and (max-width: 1200px)) {
+  .header {
+    height: 20vh;
+  }
+  .logo-container {
+    width: 100%;
+  }
+}
+@media ((min-width: 1200px) and (max-width: 1400px)) {
+  .header {
+    height: 20vh;
+  }
+  .logo-container {
+    width: 100%;
+  }
+}
+.side-bar {
+  background-color: #12111f;
+  color: #f6bd07;
+  text-align: center;
+  padding: 0 50px 0;
+}
+.side-bar .language-title, .side-bar .genre-title {
+  margin: 10px 0;
+}
+.side-bar .lists {
+  padding: 15px;
+  list-style-type: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.side-bar .lists:hover {
+  background-color: #f6bd07;
+  color: #12111f;
+}
+
+.card {
+  width: 220px;
+  position: relative;
+  transition: 0.1s ease;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.card .rating, .card .description {
+  color: #f6bd07;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.center-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.center-section .side-bar {
+  grid-column: 1/2;
+}
+.center-section .main-card-container {
+  background-color: rgba(26, 25, 36, 0.9843137255);
+  color: #f6bd07;
+  grid-column: 2/6;
+  padding: 30px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+.center-section .main-card-container .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.center-section .main-trailer-container {
+  background-color: rgba(35, 34, 49, 0.9843137255);
+  color: #f6bd07;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

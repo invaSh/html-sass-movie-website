@@ -1,0 +1,40 @@
+//colors
+$color-1: #f6bd07;
+$color-2: #12111f;
+$color-3: #232231fb;
+$color-4: #1a1924fb;
+
+//flexboxes
+@mixin flexbox ($x, $y){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;
+}
+
+
+
+$small-font: 0.75em;
+$big-font: 1.5em;
+
+$spacing-small: 15px;
+$spacing-medium: 16px;
+
+$box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$border-radius: 15px;
+
+@mixin li-components-design(){
+    padding: $spacing-small;
+    list-style-type: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: .1s;
+}
+
+@mixin li-components-hover(){
+    background-color: $color-1;
+    color: $color-2;
+}
+
+
+

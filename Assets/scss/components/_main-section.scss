@@ -1,0 +1,33 @@
+.center-section{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .side-bar{
+        grid-column: 1 / 2;
+    }
+
+    .main-card-container{
+        background-color: $color-4;
+        color: $color-1;
+        grid-column: 2/6;
+        padding: 30px;
+        @include flexbox(none, center){
+            flex-direction: column;
+        }
+
+        .main-content{
+            @include flexbox(center, center);
+            flex-wrap: wrap;
+            padding: 10px;
+            
+        }
+    }
+    
+    .main-trailer-container{
+        background-color: $color-3;
+        color: $color-1;
+        text-align: center;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,22 @@
+.card{
+        width: 220px;
+        position: relative;
+        transition: .1s ease;
+        padding: 10px;
+        img{
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .rating, .description{
+            color: $color-1;
+            text-align: center;
+            cursor: pointer; 
+        }     
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
