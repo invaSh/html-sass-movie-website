@@ -1,0 +1,29 @@
+.suggested{
+    width: 100%;
+    color: $color-1;
+    padding: 50px;
+
+    .pd{
+        padding: 15px;
+    }
+
+    .underline{
+        @include underline;
+    }
+
+    @include flexbox(center, center){
+        flex-direction: column;
+    }
+
+    .title-center{
+        @include flexbox(center, center){
+            flex-direction: column;
+        }
+    }
+
+    .wrap{
+        @include flexbox(center,center);
+    }
+
+    
+}

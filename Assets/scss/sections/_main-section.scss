@@ -3,20 +3,36 @@
 }
 
 .center-section{
-
+    padding: 50px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
     .side-bar{
         grid-column: 1 / 2;
+        border-radius: 30px ;
     }
 
     .main-card-container{
-        background-color: $color-3;
         color: $color-1;
         grid-column: 2/6;
-        padding: 30px;
         text-align: center;
+        background-color: #232231fb;
+
+
+        .main-card-title{
+            h1{
+                padding: 30px 10px;
+            }
+            @include flexbox(center, center){
+                flex-direction: column;
+            }
+
+            .underline{
+                @include underline;
+                margin-top: 10px;
+            }
+        }
+
         @include flexbox(none, center){
             flex-direction: column;
         }
@@ -32,7 +48,11 @@
     .main-trailer-container{
         background-color: $color-2;
         color: $color-1;
-        padding: 20px;
+        padding: 50px 20px 0;
+        border-radius: 30px;
+        img{
+            height: auto;
+        }
         @include flexbox(none, center){
             flex-direction: column;
         }

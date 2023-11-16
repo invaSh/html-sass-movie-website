@@ -1,0 +1,29 @@
+.banner{
+    width: 100%;
+    height:400px;
+    background-image: url(https://www.odeon.co.uk/media/wfud2teq/wish_odeon_homepagesnippet_1680x420.jpg?center=0.657886450917856,0.764945342884404&mode=crop&width=1920&height=423&rnd=133444292364600000);
+    position: relative;
+
+    .banner-content{
+        width: 20%;
+        color: $color-1;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+
+        .banner-title{
+            font-size: 1.2em;
+        }
+
+        .read-more{
+            color: $color-1;
+        }
+        .read-more:hover{
+            color: #d0e19d;
+        }
+        
+    }
+
+    
+    @include pd;
+}

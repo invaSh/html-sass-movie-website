@@ -32,9 +32,21 @@ $border-radius: 15px;
     transition: .1s;
 }
 
+@mixin pd {
+     .pd{padding: 10px;}
+}
+
 @mixin li-components-hover(){
     background-color: $color-1;
     color: $color-2;
+}
+
+@mixin underline{
+        width: 100px;
+        border: 2px solid $color-1;
+        border-right: none;
+        border-left: none;
+        height: 5px;
 }
 
 

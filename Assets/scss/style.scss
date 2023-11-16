@@ -12,13 +12,17 @@
 @import '_vars';
 @import '_breakpoints';
 @import 'components/header';
-@import 'components/side-bar';
 @import 'components/_card';
-@import 'components/main-section';
+@import 'sections/top-all-films';
+@import 'sections/intro';
+@import 'sections/banner';
+@import 'sections/side-bar';
+@import 'sections/main-section';
+@import 'sections/suggested';
 @import 'components/footer';
 
 body{
-    background-color: $color-2;
+    background-color: #232231;
 }
 
 

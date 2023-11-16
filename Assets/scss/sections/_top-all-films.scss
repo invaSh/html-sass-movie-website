@@ -1,0 +1,61 @@
+.top-films, .all-films{
+    color: $color-1;
+    width: 70%;
+    margin: 0 auto;
+    @include flexbox(center, center){
+        flex-direction: column;
+        padding: 50px;
+    }
+    h1{
+        padding: 15px;
+    }
+    .top-films-card-cont, .all-films-card-cont{
+        @include flexbox(center, center){
+            flex-wrap: wrap;
+        }
+        padding: 30px;
+    }
+    .underline{
+        @include underline;
+    }
+
+    .arrow{
+        font-size: 50px;
+        color: $color-1;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        transition: .1s ease-in-out;
+    }
+
+    .arrow:hover{
+        transform: scale(1.5);
+    }
+
+    .categories{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+
+        
+        .catg{
+            @include flexbox(space-between, center);
+            list-style: none;
+
+            li{
+                cursor: pointer;
+                transition: .1s ease;
+            }
+
+            li:hover{
+                color: #d0e19d;
+            }
+        }
+
+        .underline{
+            border-top: none;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}

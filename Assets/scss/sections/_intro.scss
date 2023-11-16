@@ -1,0 +1,45 @@
+.intro{
+    height: 100vh;
+    width: 100vw;
+    color: $color-1;
+    background-image: url('https://www.plex.tv/wp-content/uploads/2021/04/plex-splash-screen-04-30-21-new-1024x576.png');
+    background-attachment: fixed;
+
+    
+    @include pd;
+
+    .intro-container{
+        width: 65%;
+        padding: 150px;
+        .intro-title{
+            font-size: 4em;
+
+            .logo-span{
+                color: $color-2;
+                background-color: $color-1;
+                padding: 5px 15px;
+                border-radius: 20px;
+            }
+        }
+        .intro-subtitle{
+            font-size: 1.5em;
+        }
+
+        .intro-button{
+            @include li-components-design();
+            border: $color-1 solid;
+            background-color: $color-1;
+            margin-top: 10px;
+            padding: 10px 15px;
+            height: 60px;
+            width: 170px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .intro-button:hover{
+            background-color: #00000000;
+            color: $color-1;
+        }
+    }
+}
