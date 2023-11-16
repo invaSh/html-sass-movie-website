@@ -7,19 +7,22 @@
         padding: 15px;
     }
 
-    .underline{
-        @include underline;
-    }
-
     @include flexbox(center, center){
         flex-direction: column;
     }
 
-    .title-center{
+    /* .title-center{
         @include flexbox(center, center){
             flex-direction: column;
         }
     }
+
+    .underline{
+        @include underline;
+    }
+ */
+
+    @include title;
 
     .wrap{
         @include flexbox(center,center);

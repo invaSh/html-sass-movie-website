@@ -15,9 +15,8 @@
         }
         padding: 30px;
     }
-    .underline{
-        @include underline;
-    }
+    
+    @include title;
 
     .arrow{
         font-size: 50px;
@@ -41,21 +40,75 @@
         .catg{
             @include flexbox(space-between, center);
             list-style: none;
+            cursor: pointer;
 
-            li{
-                cursor: pointer;
-                transition: .1s ease;
+            .link:hover{
+                color: #f1ecec;
             }
 
-            li:hover{
-                color: #d0e19d;
+            .submenu-cont{
+                position: relative;
+                padding-right: 15px;
             }
+
+            .pd{
+                position: absolute;
+            }
+
+            .link{
+                color: $color-1;
+                text-decoration: none;
+            }
+            
         }
 
         .underline{
             border-top: none;
             width: 100%;
             margin-top: 10px;
+        }
+    }
+
+    .view-more{
+        text-decoration: none;
+        color: $color-1;
+        transition: .1s ease;
+        border-top: 2px solid $color-1;
+        border-bottom: 2px solid $color-1;
+        padding: 10px;
+    }
+    .view-more:hover{
+        color: #d0e19d;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .submenu-cont:hover .submenu{
+        display: block;
+    }
+
+    .submenu {
+        display: none;
+        list-style: none;
+        position: absolute;
+        left: -75%;
+        z-index: 2;
+        border: 3px solid $color-4;
+        background-color: $color-4;
+        border-radius: 10px;
+        li{
+            margin: 20px;
+            .nav-components{
+                @include li-components-design();
+                padding: 10px 30px;
+                text-decoration: none;
+                color: $color-1;
+            }
+        }
+
+        .nav-components:hover{
+           @include li-components-hover();
         }
     }
 }

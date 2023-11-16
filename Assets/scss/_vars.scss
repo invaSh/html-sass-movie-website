@@ -49,5 +49,17 @@ $border-radius: 15px;
         height: 5px;
 }
 
+@mixin title{
+    .title-center{
+        @include flexbox(center, center){
+            flex-direction: column;
+        }
+    }
+    .underline{
+        @include underline;
+    }
+
+}
+
 
 
