@@ -1,30 +1,52 @@
 .banner{
-    width: 100%;
+    width: 100vw;
+    min-width: 800px;
     height:400px;
-    background-image: url(/Assets/img/wish.jpg);
     position: relative;
     overflow: hidden;
 
+    img{
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .banner-content{
         width: 20%;
-        color: $color-1;
+        height: 100%;
+        color: #FFEF9E;
         position: absolute;
         top: 10%;
         left: 10%;
-
+        min-width: 350px;
+        min-height: 200px;
+        
         .banner-title{
             font-size: 1.2em;
         }
 
+        .banner-paragraph{
+            min-width: 30px;
+        }
+
         .read-more{
-            color: $color-1;
+            color: #FFEF9E;
         }
         .read-more:hover{
-            color: #d0e19d;
+            color: #E6A705;
         }
         
     }
 
     
     @include pd;
+}
+
+
+@media screen and (max-width: 790px) {
+    .banner{
+        .banner-content{
+            left: 2%;
+        }
+    }
 }

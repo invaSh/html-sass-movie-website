@@ -10,7 +10,6 @@
 
 
 @import '_vars';
-@import '_breakpoints';
 @import 'components/header';
 @import 'components/_card';
 @import 'sections/top-all-films';
@@ -18,7 +17,6 @@
 @import 'sections/banner';
 @import 'components/testimonial';
 @import 'sections/anticipated';
-@import 'sections/side-bar';
 @import 'sections/suggested';
 @import 'components/footer';
 
@@ -27,6 +25,8 @@ body{
 }
 
 
-
+.main-container{
+    overflow: hidden;
+}
 
 

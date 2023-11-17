@@ -17,19 +17,22 @@
     }
     
     @include title;
-
-    .arrow{
-        font-size: 50px;
-        color: $color-1;
-        padding: 10px;
-        margin: 10px;
-        cursor: pointer;
-        transition: .1s ease-in-out;
+    .top-films-arrows{
+        min-width: 200px;
+        .arrow{
+            font-size: 50px;
+            color: $color-1;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: .1s ease-in-out;
+        }
+    
+        .arrow:hover{
+            transform: scale(1.5);
+        }
     }
-
-    .arrow:hover{
-        transform: scale(1.5);
-    }
+    
 
     .categories{
         width: 100%;
@@ -82,33 +85,77 @@
     }
 }
 
-@media screen and (min-width: 800px) {
-
-    .submenu-cont:hover .submenu{
-        display: block;
-    }
-
-    .submenu {
-        display: none;
-        list-style: none;
-        position: absolute;
-        left: -75%;
-        z-index: 2;
-        border: 3px solid $color-4;
-        background-color: $color-4;
-        border-radius: 10px;
-        li{
-            margin: 20px;
-            .nav-components{
-                @include li-components-design();
-                padding: 10px 30px;
-                text-decoration: none;
-                color: $color-1;
-            }
-        }
-
-        .nav-components:hover{
-           @include li-components-hover();
-        }
+@media screen and (max-width: 700px){
+    .catg{
+        flex-direction: column;
     }
 }
+
+
+@media screen and ((min-width: 800px ) or (max-width: 890px)){
+    .top-films{
+        text-align: center;
+        .card:nth-child(2){
+            display: none;
+
+        }
+    }
+
+    .all-films{
+        text-align: center;
+        .catg{
+            .submenu-cont:hover .submenu{
+                display: block;
+            }
+        
+            .submenu {
+                display: none;
+                list-style: none;
+                position: absolute;
+                left: -75%;
+                z-index: 2;
+                border: 3px solid $color-4;
+                background-color: $color-4;
+                border-radius: 10px;
+                li{
+                    margin: 20px;
+                    .nav-components{
+                        @include li-components-design();
+                        padding: 10px 30px;
+                        text-decoration: none;
+                        color: $color-1;
+                    }
+                }
+        
+                .nav-components:hover{
+                   @include li-components-hover();
+                }
+            }
+
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1200px){
+    .top-films{
+        .card:nth-child(3){
+            display: none;
+
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1500px){
+    .top-films{
+        .card:nth-child(4), .card:nth-child(5){
+            display: none;
+
+        }
+    }
+    
+}
+
+

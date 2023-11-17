@@ -12,9 +12,25 @@
     @include title;
 
     .testimonials{
-        @include flexbox(center, center); 
-        gap: 40px;
-        margin: 50px;
+        @include flexbox(center,center);
+        gap: 30px;
+        max-height: 80%;
     }
 
+}
+
+@media screen and (max-width: 1000px) {
+
+    .title-center{
+        text-align: center;
+    }
+
+    .testimonials{
+        @include flexbox (center, center){
+            flex-wrap: wrap;
+        }
+    }
+        
+    
+    
 }

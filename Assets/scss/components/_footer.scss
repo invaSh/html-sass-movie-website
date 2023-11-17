@@ -10,7 +10,7 @@
 
     .footer-logo-container{
         .logo{
-            width: 100%;
+            width: 80%;
         }
         grid-row: 1 / 3;
         @include flexbox(center, center);
@@ -50,6 +50,7 @@
                 color: $color-1;
                 transition: .1s ease;
                 padding: 10px;
+                white-space: nowrap;
             }
             li a:hover{
                 color: #d0e19d;
@@ -68,4 +69,34 @@
     }
 
     
+}
+
+@media screen and (max-width: 1030px) {
+    .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        .footer-logo-container{
+            grid-column: 1/2;
+        }
+        .apps{
+            grid-column: span 2;
+             
+        }
+        .footer-nav{
+            grid-column: 3/4;
+        }
+    }
+}
+@media screen and (max-width: 740px) {
+    .footer-content{
+        @include flexbox(center, center){
+            flex-direction: column;
+        }
+
+        .footer-nav ul{
+            flex-direction: column;
+            li{
+                padding: 15px;
+            }
+        }
+    }
 }
