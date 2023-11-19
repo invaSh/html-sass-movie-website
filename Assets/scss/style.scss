@@ -10,7 +10,7 @@
 
 
 @import '_vars';
-@import 'components/header';
+@import 'sections/header';
 @import 'components/_card';
 @import 'sections/top-all-films';
 @import 'sections/intro';
@@ -18,7 +18,7 @@
 @import 'components/testimonial';
 @import 'sections/anticipated';
 @import 'sections/suggested';
-@import 'components/footer';
+@import 'sections/footer';
 
 body{
     background-color: #232231;
