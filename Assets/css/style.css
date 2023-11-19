@@ -514,7 +514,7 @@
 }
 .footer-content .apps {
   padding: 10px;
-  grid-column: 2/4;
+  grid-column: span 2;
 }
 .footer-content .apps h5 {
   font-size: 1.2em;
@@ -531,7 +531,7 @@
 }
 .footer-content .footer-nav {
   grid-row: 2/3;
-  grid-column: 2/4;
+  grid-column: span 2;
   display: flex;
   justify-content: center;
   align-items: center;
